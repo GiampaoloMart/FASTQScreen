@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:1.5.10-noble
+FROM mambaorg/micromamba:1.5.10
 COPY --chown=$MAMBA_USER:$MAMBA_USER conda.yml /tmp/conda.yml
 RUN micromamba install -y -n base -f /tmp/conda.yml \
     && micromamba install -y -n base conda-forge::procps-ng \
