@@ -1,0 +1,5 @@
+channels:
+- conda-forge
+- bioconda
+dependencies:
+- bioconda::fastq-screen=0.16.0
